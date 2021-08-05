@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brick Breaker</title>
+    <link rel="stylesheet" href="./assets/css/styles.css"/>
+    <link rel="shortcut icon" href="./assets/img/logo.PNG"/>
+</head>
+<body>
+    <audio id="collideaud">
+        <source src="./assets/sounds/collide.mp3"/>
+    </audio>
+    <audio id="failedaud">
+        <source src="./assets/sounds/failed.mp3"/>
+    </audio>
+    <div class="gamearea">
+        <div class="scorearea" id="scorearea">
+            <span><img src="./assets/img/logo.PNG" class="logo"/> </span>
+            <br/>
+            <h4>High Score: <span id="highscore"></span></h4>
+            <h5>Score: <span id="score"></span></h5>
+        </div>
+        <center>
+            <div class="startmenu" id="startmenu">
+                <span><img src="./assets/img/logo.PNG" class="logo"/></span>
+                <br/>
+                <h4>Brick Breaker</h4>
+                <br/>
+                <button class="startbtn" onclick="startGame()">Start Game</button>
+            </div>
+        </center>
+        <center>
+            <div class="endmenu" id="endmenu">
+                <span><img src="./assets/img/logo.PNG" class="logo"/></span>
+                <br/>
+                <h4>Game over</h4>
+                <br/>
+                <h4>Your Score: <span id="finalscore"></span></h4>
+                <br/>
+                <h4>High Score: <span id="finalhighscore"></span></h4>
+                <br/>
+                <button class="startbtn" onclick="startGame()">Replay</button>
+            </div>
+        </center>
+        <canvas id="canvas" width="0" height="0"></canvas>
+    </div>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
